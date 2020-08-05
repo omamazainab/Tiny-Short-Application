@@ -2,7 +2,17 @@
     background-color: #dce6ff;
 }
 
+.nav-item {
+    margin-right: 50px;
+}
 
+.navbar-toggler{
+    border-color: rgba(0,0,0,0) !important;
+}
+
+.navbar-toggler-icon{
+    background-image: url(./assets/icons8-menu.svg) !important;
+}
 
 @media only screen and (max-width: 600px) {
     
