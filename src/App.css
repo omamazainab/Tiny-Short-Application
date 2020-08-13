@@ -1,19 +1,134 @@
-*{
+* {
     background-color: #dce6ff;
+}
+
+body{
+    font-family: system-ui,-apple-system,BlinkMacSystemFont,Roboto,sans-serif;
+    font-size: 24px;
+    line-height: 1.67;
+    color: rgba(40,40,65,.7);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.header {
+    padding: 20px 0;
+}
+
+nav {
+    padding: 0 0 !important;
 }
 
 .nav-item {
     margin-right: 50px;
 }
 
-.navbar-toggler{
-    border-color: rgba(0,0,0,0) !important;
+.navbar-toggler {
+    border-color: rgba(0, 0, 0, 0) !important;
 }
 
-.navbar-toggler-icon{
+.navbar-toggler-icon {
     background-image: url(./assets/icons8-menu.svg) !important;
 }
 
-@media only screen and (max-width: 600px) {
+.navbar-brand {
+    font-family: Rubik, sans-serif;
+    font-size: 20px;
+    line-height: .75;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #282841;
+}
+
+.intro_title {
+    font-size: 70px;
+    line-height: 1.21;
+    color: #282841;
+    margin-top: 0;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.macbook {
+    max-width: 100%;
+}
+
+.intro_container{
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 200px;
+    overflow: hidden;
+}
+
+.intro_button_wrapper{
+    margin-bottom: 60px;
+}
+
+.intro_button{
+    margin-right: 30px;
+}
+
+.button{
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    vertical-align: top;
+    min-width: 240px;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: .73;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+    border: 1px solid rgba(45,90,210,.8);
+    padding: 20px 30px;
+    transition: .1s;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.3);
+   
+}
+
+.download_button{
+    background-image: linear-gradient(180deg,#0986ff,#00299d);
+    color:white !important;
+}
+
+.button_white{
+    color: #282841;
+    border: 1px solid hsla(0,0%,86%,.8);
+    background-image: linear-gradient(180deg,#fff,#fff 46%,#f3f3f3);
+}
+
+.intro_container p{
+    margin: 0 auto 30px;
+    max-width: 565px;
+    font-size: 24px;
+    color: rgba(40,40,65,.7);
+    line-height: 1.67;
+} 
+
+.intro_video_wrapper{
+    position: relative;
+}
+
+.intro_wave_wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
     
+}
+
+@media only screen and (max-width: 992px) {
+    .intro_container p{
+        max-width: 490px;
+    }  
+}
+
+@media only screen and (max-width: 767px){
+    .intro_container p{
+        max-width: 460px;
+    }  
 }
