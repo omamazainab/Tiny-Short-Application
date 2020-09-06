@@ -113,11 +113,22 @@ nav {
     position: relative;
 }
 
+.intro_video_wrapper>video{
+    position: relative;
+    z-index: 1;
+    width: 440px;
+    height: 440px;
+    border-radius: 5px;
+    box-shadow: 0 30px 80px 0 rgba(40,52,205,.6);
+
+}
+
 .intro_wave_wrapper{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+    user-select: none;
     
 }
 
